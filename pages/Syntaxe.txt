@@ -1,0 +1,135 @@
+!Aide
+Voici un aperçu de toutes les règles de mise en forme dans ''BlazeKiss''.
+Cliquez sur "Éditer" en haut ou en bas de cette page pour voir comment ça se passe.
+(Si vous ne voyez que "Page verrouillée", effectuez un CHMOD 775 sur ce fichier via un logiciel FTP)
+
+Voir aussi [Syntaxe des Tables] pour créer des tableaux.
+
+----
+
+Les titres utilisent le point d'exclamation '''!'''%%
+^! Gros%%
+^!! Moins gros%%
+^!!! Encore moins gros%%
+produit :
+! Gros
+!! Moins gros
+!!! Encore moins gros
+
+Pour générer automatiquement une table des matières dans une page, ajoutez le terme '''%TOC%''' dans celle-ci :
+* en dernière ligne pour plus de clarté, cela n'influe pas sur son positionnement ;
+* en 1ère ligne si vous voulez écrire %TOC% dans la page. Seule la 1ère occurrence sera remplacée par la table des matières.
+
+----
+
+Les styles utilisent la simple apostrophe '
+* ^''^'Gras^''^' --> '''Gras'''
+* ^''italique^'' --> ''italique''
+* ^''^''^'Gras et italique^''^''^' --> '''''Gras et italique'''''
+
+----
+
+Il est possible de générer des citations avec trois " 
+
+"""Ceci est ma citation
+
+Il est possible de générer des warning avec ^@^@warning
+
+@@Ceci est mon warning
+
+----
+
+La rayure de mot utilise l'apostrophe avec deux tirets%%
+^'--Rayé--' --> '--Rayé--'
+
+de même pour souligner, l'apostrophe suivit de deux blancs soulignés (underscore)%%
+^'__Souligné__' --> '__Souligné__'
+
+----
+
+Les listes ordonnées utilisent le dièse '''#'''
+# Premier
+# Deuxième
+# Troisième
+
+----
+
+Les listes non ordonnées utilisent l'étoile '''*'''
+* Pomme
+* Poire
+* Pêche
+
+----
+
+Le code, et tous les textes où le formatage est important, utilisent deux accolades%%
+^{{import sys%%
+if len(sys.argv) == 2:%%
+   print "Hello",sys.argv^[1]}}%%
+donne :
+{{import sys
+if len(sys.argv) == 2:
+   print "Hello",sys.argv[1]}}
+
+----
+
+La séparation entre les paragraphes de texte est faite grâce à une ligne vide.
+Pour forcer un retour à la ligne au milieu d'un paragraphe, utilisez : ^%%
+
+----
+
+Certains caractères spéciaux sont reconnus :
+* Flèches : &lt;^-- : &lt;--, ^--> : -->, &lt;^--> : &lt;-->
+* Copyrights : ^(c) ou ^(C) : (c), ^(r) ou ^(R) : (r)
+
+----
+
+Les liens vers les wiki-pages utilisent les crochets :
+'''^['''Accueil''']''' --> [Accueil]
+
+Si une page n'existe pas, elle sera créée au premier clic sur son lien.
+Cliquez sur "BacASable" ci-dessous et vous pourrez tout simplement écrire cette nouvelle page ...%%
+[BacASable]
+
+Pour lier une wiki-page avec un texte différent procédez ainsi :
+'''^['''Au début'''|?page='''Accueil''']''' --> [Au début|?page=Accueil]
+
+Les liens externes et les adresses eMail sont reconnus automagiquement ...
+* ^http://blog.idleman.fr/ --> http://blog.idleman.fr/
+* idleman^@example.org --> idleman@example.org
+
+ou au travers d'un texte entre crochets :
+* '''^['''Visitez le site d'idleman'''|'''^http://blog.idleman.fr/''']''' --> [Visitez le site d'idleman|http://blog.idleman.fr/]
+
+avec un ? on fait un lien vers Wikipedia dans la langue courante :
+* '''^[?'''Wiki''']''' --> [?Wiki]
+
+----
+
+Les images sont incluses automagiquement en insérant l'URL de l'image que vous voulez voir entre crochets%%
+'''^['''^http://blog.idleman.fr/img/logo_100.png''']''' -->
+[http://blog.idleman.fr/img/logo_100.png]
+
+Vous pouvez aussi utiliser une image comme un lien : %%
+'''^['''^http://blog.idleman.fr/img/logo_100.png'''|'''^http://blog.idleman.fr/''']''' --> 
+[http://blog.idleman.fr/img/logo_100.png|http://blog.idleman.fr/]
+
+Mais aussi positionner l'image de manière flottante à gauche ou à droite :%%
+[http:/blog.idleman.fr/img/logo_100.png|left] [http://blog.idleman.fr/img/logo_100.png|http://blog.idleman.fr.org|right]
+%%
+&lt;-- '''^['''^http:/blog.idleman.fr/img/logo_100.png'''|left]'''%%
+'''^['''^http://blog.idleman.fr/img/logo_100.png'''|'''^http://blog.idleman.fr'''|right]''' -->
+%%
+
+
+----
+
+... et pour insérer des lignes, utilisez quatre tirets : '''---- '''
+
+----
+
+Enfin, pour neutraliser la syntaxe de BlazeKiss, utilisez l'accent circonflexe ^^%%
+Ainsi, saisir '''^^^['''BlazeKiss''']''' permet d'afficher ^[BlazeKiss] plutôt que [BlazeKiss]
+
+----
+
+Essayez ! Vous verrez, c'est très simple (^_^)

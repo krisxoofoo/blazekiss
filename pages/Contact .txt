@@ -1,0 +1,54 @@
+!!!BlazeKiss
+
+
+* '''Auteur''' : Valentin CARRUESCO aka Idleman
+* '''Licence''' : GNU/GPLv2
+* '''Blog''' : http://blog.idleman.fr
+* '''Page projet''' : http://dizplay.idleman.fr
+* '''Version''' : 0.1
+
+---
+
+Ce fork n'aurais jamais vu le jour sans ses sources initiales, citées ci dessous
+
+
+---
+
+
+!!!!Wikiss 
+
+* '''Auteur''' : Inconnu
+* '''Licence''' : GNU/GPLv2
+* '''Page projet''' : http://wikiss.tuxfamily.org/
+* '''Version''' : 0.4 Beta 1
+
+
+---
+
+
+!!!!TigerWiki
+
+* '''Auteur''' : Inconnu
+* '''Licence''' : GNU/GPLv2
+* '''Page projet''' : http://www.chabel.org/
+* '''Version''' : Inconnu
+
+
+---
+
+
+!!!!DESIGNA Studio
+* '''Version:''' 2.01 (August 2012)
+* '''Page projet:''' http://sylvainlafitte.com/designa/
+* '''Auteur:''' Sylvain Lafitte
+
+---
+
+
+!!!!Resources:
+* '''HTML5 Boilerplate''' (http://html5boilerplate.com/),
+* '''Normalise.css''' (http://necolas.github.com/normalize.css/), 
+* '''Proportional grids by Boon''' (http://builtbyboon.com),
+* '''CSS Tricks''' (css-tricks.com).
+
+

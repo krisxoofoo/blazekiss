@@ -1,0 +1,54 @@
+<rss version="0.91">
+<channel>
+<title>Le Wiki chaud comme une barquette de frittes :p</title>
+<link>http://127.0.0.1:80/BlazeKiss/index.php</link>
+<description>Flux RSS de Le Wiki chaud comme une barquette de frittes :p</description>
+<language>fr</language>
+<item>
+            <title>Test</title>
+            <pubDate>Thu, 28 Feb 2013 16:29:29 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Test&amp;lang=fr</link>
+            <description>Test </description>
+            </item><item>
+            <title>chmod 775</title>
+            <pubDate>Fri, 02 Nov 2012 19:45:44 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=chmod+775&amp;lang=fr</link>
+            <description>chmod 775 </description>
+            </item><item>
+            <title>Installation</title>
+            <pubDate>Fri, 02 Nov 2012 19:40:21 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Installation&amp;lang=fr</link>
+            <description>Installation </description>
+            </item><item>
+            <title>FAQ</title>
+            <pubDate>Fri, 02 Nov 2012 19:28:17 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=FAQ&amp;lang=fr</link>
+            <description>FAQ </description>
+            </item><item>
+            <title>Menu</title>
+            <pubDate>Fri, 02 Nov 2012 19:10:55 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Menu&amp;lang=fr</link>
+            <description>Menu </description>
+            </item><item>
+            <title>Accueil</title>
+            <pubDate>Fri, 02 Nov 2012 19:10:21 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Accueil&amp;lang=fr</link>
+            <description>Accueil </description>
+            </item><item>
+            <title>Syntaxe des Tables</title>
+            <pubDate>Fri, 02 Nov 2012 18:47:11 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Syntaxe+des+Tables&amp;lang=fr</link>
+            <description>Syntaxe des Tables </description>
+            </item><item>
+            <title>Syntaxe</title>
+            <pubDate>Fri, 02 Nov 2012 18:45:21 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Syntaxe&amp;lang=fr</link>
+            <description>Syntaxe </description>
+            </item><item>
+            <title>Contact </title>
+            <pubDate>Fri, 02 Nov 2012 18:39:40 +0000</pubDate>
+            <link>http://127.0.0.1:80/BlazeKiss/index.php?page=Contact+&amp;lang=fr</link>
+            <description>Contact  </description>
+            </item>
+</channel>
+</rss>

@@ -1,0 +1,12 @@
+Un CHMOD est une action qui a pour but de changer les permissions d'accès à un fichier ou répertoire. Il s'effectue avec votre logiciel FTP en faisant clic droit > permissions, généralement.
+
+
+!!!!Créer un CHMOD avec FileZilla Client ?
+
+# Une fois connecté sur votre hébergement 
+# Sélectionnez le fichier ou le dossier, puis Click droit de la souris
+fichier
+# Cochez les cases de permission poiur obtenir le chmod souhaité
+#Cochez la case '''récursivité''' si vous souhaitez que le chmod s'applique aux sous dossiers/fichiers
+
+

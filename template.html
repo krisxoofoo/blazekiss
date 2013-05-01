@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="{LANG}" lang="{LANG}"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- Remove this line if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Designa Studio, a HTML5 / CSS3 template.">
+	<meta name="author" content="Sylvain Lafitte, Web Designer, sylvainlafitte.com">
+	
+	<title>{WIKI_TITLE} - {PAGE_TITLE_BRUT}</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+
+<body>
+<!-- Prompt IE 7 users to install Chrome Frame -->
+<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<div class="container">
+
+	<header id="navtop">
+		<a href="./?page=Accueil" class="logo fleft">
+			<img src="img/logo.png" alt="BlazeKiss">
+		</a>
+		
+		<nav class="fright" style="margin-top:10px;">
+
+			
+			<ul>
+				<li><a href="./?page=Accueil">Accueil</a></li>
+			</ul>
+			<ul>
+				<li><a href="http://blog.idleman.fr">Blog</a></li>
+			</ul>
+            <ul>
+				<li><a href="./?page=Contact & Credits">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<div class="services-page main grid-wrap">
+
+		<header class="grid col-full">
+			<hr>
+		
+		</header>
+
+
+
+		<aside class="grid col-one-quarter mq2-col-full">
+			{TOC}
+		
+			<menu>
+            {<div id="menu">MENU</div>}
+			</menu>
+		</aside>
+		
+		<section class="grid col-three-quarters mq2-col-full">
+		
+			<div class="grid-wrap">
+			<article id="navbutton" class="grid col-full">
+
+
+
+			<div class="error">{ERROR}</div>
+			        
+					{CONTENT}
+					
+			
+			</article>
+			</div> <!-- 100%articles-->
+		 <br/>
+         <hr/>
+         {PAGE_TITLE} | {LAST_CHANGE} {TIME} ({RECENT_CHANGES}) |{EDIT} {(HELP)} {/ HISTORY}
+		</section>	
+		
+		<!--
+		{SEARCH}
+        -->
+       
+	</div> <!--main-->
+
+<div class="divide-top">
+	<footer class="grid-wrap">
+	
+		<nav class="grid col-full ">
+            Wiki utilisant <a href="http://wikiss.tuxfamily.org/">{WIKI_VERSION}</a> génétiquement modifié par <a href="mailto:idleman@idleman.fr">@Idleman</a>
+			<ul>
+				<li><a href="./rss_fr.xml">Flux RSS</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+
+</div>
+
+<!-- Javascript - jQuery -->
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="js/selectivizr.js"></script>
+<![endif]-->
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
