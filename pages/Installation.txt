@@ -1,3 +1,5 @@
+TOC
+
 !!! Prés-requis
 Le seul prés-requis pour utiliser ''BlazKiss'' (outre un serveur web) est PHP5.
 
