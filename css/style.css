@@ -397,6 +397,26 @@ html[xmlns] .slides {display: block;}
 .flex-prev:hover, .flex-next:hover{ color: #0078CF}
 
 
+/* Plugin wkp_Tables */
+table.wikitable {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+table.wikitable td {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+table.wikitable td.em {
+  background: #ccc;
+  font-weight: bold;
+} 
+
+
+
 /* -- WORKS / Home-page and Works-page
 ------------------------------------------------------------- */
 .works figure > a{ 
