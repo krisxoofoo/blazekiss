@@ -9,6 +9,7 @@
    
    ini_set('default_charset','UTF-8'); // Default character set for auto content type header
    header('Content-type: text/html; charset=UTF-8');
+   date_default_timezone_set('Europe/Paris'); 
 
    // Fichier de configuration
    include('_config.php');
