@@ -51,10 +51,10 @@ On peut aussi faire de la mise-en-forme de cellule. Il faut pour cela indiquer q
 |ht ,3 Liens         |^[Liens] | [Liens] |
                      |^[Liens 2^|?page=Liens]| [Liens 2|?page=Liens] |
                      |^[?Wikipedia]| [?Wikipedia] |
-|ht ,4 Images        |^[^http://blog.idleman.fr/img/logo_100.png]|[http://blog.idleman.fr/img/logo_100.png]|
-    |^[/logo_100.png^|^http://blog.idleman.fr/]|[http://blog.idleman.fr/img/logo_100.png|http://blog.idleman.fr/]|
-    |^[^http://blog.idleman.fr/img/logo_100.png^|right] | [http://blog.idleman.fr/img/logo_100.png|right]|
-    |^[/logo_100.png^|^http://blog.idleman.fr/^|left] | [http://blog.idleman.fr/img/logo_100.png|http://blog.idleman.fr/|left]|
+|ht ,4 Images        |^[^http://wikiss.tuxfamily.org/img/logo_100.png]|[http://wikiss.tuxfamily.org/img/logo_100.png]|
+    |^[/logo_100.png^|^http://wikiss.tuxfamily.org/]|[http://wikiss.tuxfamily.org/img/logo_100.png|http://wikiss.tuxfamily.org/]|
+    |^[^http://wikiss.tuxfamily.org/img/logo_100.png^|right] | [http://wikiss.tuxfamily.org/img/logo_100.png|right]|
+    |^[/logo_100.png^|^http://wikiss.tuxfamily.org/^|left] | [http://wikiss.tuxfamily.org/img/logo_100.png|http://wikiss.tuxfamily.org/|left]|
 %%
 |h 2, Syntaxe non supportée|
 |Titres    | !! Titre|
