@@ -351,7 +351,7 @@
    }
    elseif ($action == 'search')
    { // Page de recherche
-      $files= '';
+      $files= array();
       $PAGE_TITLE_link = FALSE;
       $editable = FALSE;
       $dir = opendir (getcwd() . '/'.$PAGES_DIR);
@@ -409,7 +409,7 @@
       $CONTENT = preg_replace('/&amp;#036;/Umsi', '&#036;', $CONTENT); // ??
       $CONTENT = preg_replace('/&amp;#092;/Umsi', '&#092;', $CONTENT); // ??
       
-      $CONTENT = preg_replace('/\^(.)/Umsie', "'&#'.ord('$1').';'", $CONTENT); // escape caractère
+      $CONTENT = preg_replace_callback('/\^(.)/Umsi', function($m) { return "&#".ord($m[1]).";"; }, $CONTENT); // escape caractère
       // undividable space, hum this are french typographic rules !
       $CONTENT = preg_replace("/ (»|;|!|:|\\?)/Um", '&nbsp;$1', $CONTENT);
       $CONTENT = str_replace('« ', '«&nbsp;', $CONTENT);
