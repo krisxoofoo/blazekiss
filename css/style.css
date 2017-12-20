@@ -55,7 +55,7 @@ a:active, a:focus{position:relative;top:1px;}
 abbr[title]{border-bottom:1px dotted}
 dfn{font-style:italic}
 hr{display:block; height:1px; border:0; border-top:1px solid #ddd; margin:1em 0; padding:0}
-pre, code, kbd, samp{font-family:monospace,monospace; _font-family:'courier new',monospace; font-size:1em}
+pre, code, kbd, samp{font-family:monospace,monospace; _font-family:'courier new',monospace; font-size:1em;overflow:auto;}
 q{quotes:none}
 q:before, q:after{content:""; content:none}
 blockquote { 

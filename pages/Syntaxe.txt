@@ -106,18 +106,18 @@ avec un ? on fait un lien vers Wikipedia dans la langue courante :
 ----
 
 Les images sont incluses automagiquement en insérant l'URL de l'image que vous voulez voir entre crochets%%
-'''^['''^http://blog.idleman.fr/img/logo_100.png''']''' -->
-[http://blog.idleman.fr/img/logo_100.png]
+'''^['''^img/logo.png''']''' -->
+[img/logo.png]
 
 Vous pouvez aussi utiliser une image comme un lien : %%
-'''^['''^http://blog.idleman.fr/img/logo_100.png'''|'''^http://blog.idleman.fr/''']''' --> 
-[http://blog.idleman.fr/img/logo_100.png|http://blog.idleman.fr/]
+'''^['''^img/logo.png'''|'''^http://blog.idleman.fr/''']''' --> 
+[img/logo.png|http://blog.idleman.fr/]
 
 Mais aussi positionner l'image de manière flottante à gauche ou à droite :%%
-[http:/blog.idleman.fr/img/logo_100.png|left] [http://blog.idleman.fr/img/logo_100.png|http://blog.idleman.fr.org|right]
+[img/logo.png|left] [img/logo.png|http://blog.idleman.fr/|right]
 %%
-&lt;-- '''^['''^http:/blog.idleman.fr/img/logo_100.png'''|left]'''%%
-'''^['''^http://blog.idleman.fr/img/logo_100.png'''|'''^http://blog.idleman.fr'''|right]''' -->
+&lt;-- '''^['''^img/logo.png'''|left]'''%%
+'''^['''^img/logo.png'''|'''^http://blog.idleman.fr'''|right]''' -->
 %%
 
 
@@ -154,12 +154,13 @@ On peut aussi faire de la mise-en-forme de cellule. Il faut pour cela indiquer q
 ** r : alignement horizontal à droite
 * deux chiffres peuvent être ajoutés pour connecter les cellules :
 ** le premier indique combien de colonnes doivent être connectées
+** une virgule obligatoire sépare le 1er d'un éventuel deuxième ou du reste de la cellule
 ** le second placé après une virgule connecte les lignes
 
 {{
 |hl Titre gauche|hr Titre droite|
 |r droite       |l    gauche    |
-|2 Deux colonnes                |
+|2, 2 colonnes                |
 |t ,2 Deux lignes| A |
                  | B |
 |,2 Deux lignes  | C |
@@ -167,14 +168,14 @@ On peut aussi faire de la mise-en-forme de cellule. Il faut pour cela indiquer q
 
 |hl Titre gauche|hr Titre droite|
 |r droite       |l    gauche    |
-|2 Deux colonnes                |
+|2, 2 colonnes                |
 |t ,2 Deux lignes| A |
                  | B |
 |,2 Deux lignes  | C |
                  | D |
 
 !! Inclusion dans une table
-|h 3 Syntaxe supportée|
+|h 3, Syntaxe supportée|
 |ht ,7 Mise en forme | ^''italique^'' | ''italique'' |
                      |  '^''gras'^''  |  '''gras'''  |
                      |'^'^'^''gras italique'^'^'^''|'''''gras italique'''''|
@@ -189,13 +190,11 @@ On peut aussi faire de la mise-en-forme de cellule. Il faut pour cela indiquer q
     |^[/logo_100.png^|^http://wikiss.tuxfamily.org/]|[http://wikiss.tuxfamily.org/img/logo_100.png|http://wikiss.tuxfamily.org/]|
     |^[^http://wikiss.tuxfamily.org/img/logo_100.png^|right] | [http://wikiss.tuxfamily.org/img/logo_100.png|right]|
     |^[/logo_100.png^|^http://wikiss.tuxfamily.org/^|left] | [http://wikiss.tuxfamily.org/img/logo_100.png|http://wikiss.tuxfamily.org/|left]|
-
-
-|h 2 Syntaxe non supportée|
+%%
+|h 2, Syntaxe non supportée|
 |Titres    | !! Titre|
 |,2 Listes | * non ordonnée |
            | # ordonnée |
 |Lignes    |----|
 
-
-Essayez ! Vous verrez, c'est très simple (^_^)
+Essayez ! Vous verrez, c'est très simple (^^_^^)

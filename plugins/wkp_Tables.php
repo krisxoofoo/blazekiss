@@ -35,7 +35,7 @@ class Tables
       //~ $s = trim($s);
       // on enleve les liens contenants |
       $regex = "/\[([^]]+\|.+)\]/Ums";
-      $nblinks = preg_match_all($regex,$s,$matches_links);
+      $nblinks = preg_match_all($regex,$s[0],$matches_links);
       $s = preg_replace($regex,"[LINK]",$s);
       // Doublage des |
       $s = str_replace('|', '||', $s);
@@ -45,8 +45,8 @@ class Tables
       $s = str_replace("\n","",$s);
 
       // Creation des <th></th> et des <td></td> en se servant des |
-      $s=preg_replace('/\|(h){0,1}(([lrtb]* ){0,1})(\s*(\d*)\s*,(\d*)\s*){0,1}(.*?)\|/e',
-         '"<t".("$1"?"h":"d").("$5"?" colspan=\"$5\"":" ").("$6"?" rowspan=\"$6\"":" ").$this->table_style("$2").">$7</t".("$1"?"h":"d").">"',$s);
+      $s=preg_replace_callback('/\|(h){0,1}(([lrtb]* ){0,1})(\s*(\d*)\s*,(\d*)\s*){0,1}(.*?)\|/',
+         function($m) { return "<t".("".$m[1].""?"h":"d").("".$m[5].""?" colspan=\"".$m[5]."\"":" ").("".$m[6].""?" rowspan=\"".$m[6]."\"":" ").$this->table_style($m[2]).">".$m[7]."</t".("".$m[1].""?"h":"d").">"; } ,$s)[0];
 
 
       if ($nblinks> 0)
@@ -60,9 +60,9 @@ class Tables
    function formatBegin()
    {
       global $CONTENT;
-      $CONTENT = preg_replace(
-      "/((^ *\|[^\n]*\| *$\n)+)/me",
-      '"<table class=\"wikitable\">".stripslashes($this->make_table("$1"))."</table>\n"',
+      $CONTENT = preg_replace_callback(
+      "/((^ *\|[^\n]*\| *$\n)+)/m",
+      function($m) { return "<table class=\"wikitable\">".stripslashes($this->make_table($m))."</table>\n"; },
       $CONTENT);
    }
 

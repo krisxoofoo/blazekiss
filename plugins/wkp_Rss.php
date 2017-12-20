@@ -32,8 +32,7 @@ class Rss
       global $WIKI_TITLE,$PAGES_DIR,$LANG,$TIME_FORMAT,$RECENT_NUMBER;
       $CONTENT_RSS = "";
    
-      // TODO: bug if https
-      $ADR_ACCUEIL = "http://".$_SERVER["SERVER_NAME"].':'.$_SERVER["SERVER_PORT"].$_SERVER["SCRIPT_NAME"];
+      $ADR_ACCUEIL = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER["SERVER_NAME"].':'.$_SERVER["SERVER_PORT"].$_SERVER["SCRIPT_NAME"];
       
       $rss = str_replace('{WIKI_TITLE}', $WIKI_TITLE, self::template);
       $rss = str_replace('{ADR_ACCUEIL}', $ADR_ACCUEIL , $rss);
